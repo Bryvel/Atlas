@@ -9,7 +9,10 @@
 
   <script src="metodosCarga.js"></script>
   <script src="jquery.js"></script>
-  
+  <script>
+
+  </script>
+ 
   <link rel="stylesheet" href="bootstrap.css">
 </head>
 
@@ -55,9 +58,7 @@
     <div class="row">
       
       <div class="col-xl-4">
-        <h1>
-          <center><%=huesos[0].nombre%></center>
-        </h1>
+        <center><h1 id="nombre">        </h1></center>
         <div id="listaDetalle">
 
         </div>
@@ -190,10 +191,14 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <script >
 
+
+
 var listaPartes = <%- JSON.stringify( huesos[0].partes ); %>;
 var nombre=<%- JSON.stringify( huesos[0].nombre ); %>;
+  
 console.log(listaPartes)
 CargarLista();
+CargarNombre(nombre);
 clickLoop(nombre, listaPartes);
 cargarAtlas();
 cargarXray();
