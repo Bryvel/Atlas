@@ -55,8 +55,7 @@
     <div class="row">
       
       <div class="col-xl-4">
-        <h1>
-          <center><%=huesos[0].nombre%></center>
+        <h1 id="nombre">
         </h1>
         <div id="listaDetalle">
 
@@ -193,6 +192,7 @@ var listaPartes = <%- JSON.stringify( huesos[0].partes ); %>;
 var nombre=<%- JSON.stringify( huesos[0].nombre ); %>;
 console.log(listaPartes)
 CargarLista();
+CargarNombre(nombre);
 clickLoop(nombre, listaPartes);
 cargarAtlas();
 cargarXray();

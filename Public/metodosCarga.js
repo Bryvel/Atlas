@@ -36,6 +36,10 @@ function CargarIframe(frame){
 $("#contenedor").attr("src",frame);
 
 }
+
+function CargarNombre(nombre){
+  $("#nombre").append(""+nombre+"");
+}
  
    var srchp;
    var srcempy=null;
