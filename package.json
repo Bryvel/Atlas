@@ -14,7 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "image-map-resizer": "^1.0.10",
     "jquery": "^3.4.1",
     "jsdom": "^15.1.1",
